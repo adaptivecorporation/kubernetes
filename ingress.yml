@@ -1,0 +1,30 @@
+######!!!!! this file WILL NOT be replicated####### but when a change is done just do a "kubectl apply -f ingress.yml"
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: nginx
+  name: test-ingress
+spec:
+  rules:
+#####this section will be repeated replace the client1 with new subdomain prefix##########
+  - host: client1.myk8s.com
+    http:
+      paths:
+      - backend:
+          serviceName: client1-adp
+          servicePort: 80
+################
+  - host: client2.myk8s.com
+    http:
+      paths:
+      - backend:
+          serviceName: client2-adp
+          servicePort: 80
+  - host: client3.myk8s.com
+    http:
+      paths:
+      - backend:
+          serviceName: client3-adp
+          servicePort: 80
