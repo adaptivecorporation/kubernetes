@@ -11,5 +11,5 @@ kubectl apply -f nginx-controller.yml
 Step 2. Apply the ingress rules
 
 ```bash
-kubecl apply -f ingress.yml
+kubectl apply -f ingress.yml
 ```
