@@ -1,5 +1,4 @@
 # Multitenant NGINX Ingress - Bare Metal Kubernetes
-Manifests included
 
 Installation on bare-metal systems
 
