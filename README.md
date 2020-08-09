@@ -1,7 +1,7 @@
 # Multitenant NGINX Ingress - Bare Metal Kubernetes
-K8s Manifests
+Manifests included
 
-Installation on bare-metal
+Installation on bare-metal systems
 
 Step 1. Install the NGINX controller
 
