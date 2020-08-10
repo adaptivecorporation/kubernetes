@@ -1,4 +1,4 @@
-# Multitenant NGINX Ingress - Bare Metal Kubernetes
+# Multitenant NGINX Ingress Controller - Bare Metal Kubernetes
 
 Installation on bare-metal systems
 
